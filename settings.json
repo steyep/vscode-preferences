@@ -2,7 +2,7 @@
     "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
     "editor.tabSize": 2,
-    "editor.lineHeight": 26,
+    "editor.lineHeight": 28,
     "editor.minimap.renderCharacters": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.scrollBeyondLastLine": false,
@@ -16,6 +16,7 @@
     },
     "php-docblocker.gap": true,
     "php-docblocker.useShortNames": true,
+    "php-docblocker.qualifyClassNames": true,
     "workbench.tree.horizontalScrolling": true,
     "workbench.startupEditor": "none",
     "terminal.external.osxExec": "iTerm.app",
@@ -36,14 +37,11 @@
         "suppressUpdateNotice": false,
         "suppressWelcomeNotice": true
     },
-    "workbench.colorTheme": "Material Theme Darker",
     "gitlens.keymap": "alternate",
-    "workbench.iconTheme": "eq-material-theme-icons",
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
                 "scope": [
-                    "comment",
                     "keyword.control"
                 ],
                 "settings": {
@@ -78,23 +76,47 @@
         // Hover to view descriptions of existing attributes.
         // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
         "version": "0.2.0",
-        "configurations": [
-            {
-                "name": "Listen for XDebug",
-                "type": "php",
-                "request": "launch",
-                "port": 9001,
-                "serverSourceRoot": "${workspaceRoot}",
-                "localSourceRoot": "${workspaceRoot}"
-            },
-            {
-                "name": "Launch currently open script",
-                "type": "php",
-                "request": "launch",
-                "program": "${file}",
-                "cwd": "${fileDirname}",
-                "port": 9001
+        "configurations": [{
+            "name": "Listen for XDebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9001,
+            "xdebugSettings": {
+                "show_hidden": 1
             }
+        }]
+    },
+    "gitlens.historyExplorer.enabled": false,
+    "files.associations": {
+        "*.module": "php",
+        "*.inc": "php",
+        "*.install": "php",
+        ".gitconfig.symlink": "shellscript"
+    },
+    "php-docblocker.returnGap": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.editor.swipeToNavigate": true,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.colorTheme": "Enki - Rainbow Bro",
+    "materialTheme.autoApplyIcons": false,
+    "bookmarks.navigateThroughAllFiles": false,
+    "workbench.activityBar.visible": true,
+    "explorer.autoReveal": false,
+    "breadcrumbs.enabled": true,
+    "eslint.nodePath": "/usr/local/lib/node_modules/eslint-config-airbnb-bundle",
+    "editor.fontSize": 15,
+    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-seriffont",
+    "materialTheme.showReloadNotification": false,
+    "window.zoomLevel": 0,
+    "debug.internalConsoleOptions": "neverOpen",
+    "debug.openDebug": "neverOpen",
+    "debug.openExplorerOnEnd": true,
+    "debug.showInStatusBar": "never",
+    "macros": {
+        "startDebug": [
+            "workbench.view.debug",
+            "workbench.action.debug.start"
         ]
-    }
+    },
+    "window.nativeFullScreen": false,
 }

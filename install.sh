@@ -40,19 +40,6 @@ rm -rf "$user"
 # Create the symlink
 ln -s "$prefs/" "$user"
 
-# Update the icon
-find "/Applications/Visual Studio Code.app/Contents/Resources" \
-  -maxdepth 1 \
-  -type f \
-  -name "Code.icns" \
-  -exec sh -c '
-  app="${0%%.app*}.app"
-  cp "$1/icon/icon.icns" "$0"
-  cp -r "$app" "$app.copy"
-  rm -rf "$app"
-  mv "$app.copy" "$app"
-  echo "Icon updated for $app"
-' "{}" "$prefs" \;
 
 
 
