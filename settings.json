@@ -1,23 +1,25 @@
 {
-    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 14,
     "editor.tabSize": 2,
-    "editor.lineHeight": 28,
+    "editor.lineHeight": 30,
     "editor.minimap.renderCharacters": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.scrollBeyondLastLine": false,
     "editor.occurrencesHighlight": false,
     "explorer.openEditors.visible": 0,
     "phpcs.standard": "Drupal,DrupalPractice",
+    "phpcs.ignorePatterns": [
+        "*/**/*.drushrc.php"
+    ],
     "php.suggest.basic": false,
-    "php.executablePath": "/usr/local/opt/php70/bin/php",
     "[php]": {
         "editor.rulers": [80]
+    },
+    "[csharp]": {
+        "editor.tabSize": 4,
     },
     "php-docblocker.gap": true,
     "php-docblocker.useShortNames": true,
     "php-docblocker.qualifyClassNames": true,
-    "workbench.tree.horizontalScrolling": true,
     "workbench.startupEditor": "none",
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.fontFamily": "Droid Sans Mono for Powerline",
@@ -55,10 +57,8 @@
     },
     "workbench.colorCustomizations": {
         "scrollbar.shadow": "#151b1f65",
-        "editor.findMatchHighlightBackground": "#16d0ff28",
     },
     "editor.snippetSuggestions": "top",
-    "editor.formatOnPaste": true,
     "window.newWindowDimensions": "inherit",
     "editor.parameterHints": false,
     "editor.emptySelectionClipboard": false,
@@ -91,20 +91,18 @@
         "*.module": "php",
         "*.inc": "php",
         "*.install": "php",
-        ".gitconfig.symlink": "shellscript"
+        "*.symlink": "shellscript"
     },
     "php-docblocker.returnGap": true,
     "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.editor.swipeToNavigate": true,
     "workbench.editor.tabSizing": "shrink",
     "workbench.colorTheme": "Enki - Rainbow Bro",
     "materialTheme.autoApplyIcons": false,
     "bookmarks.navigateThroughAllFiles": false,
-    "workbench.activityBar.visible": true,
     "explorer.autoReveal": false,
     "breadcrumbs.enabled": true,
     "eslint.nodePath": "/usr/local/lib/node_modules/eslint-config-airbnb-bundle",
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
     "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-seriffont",
     "materialTheme.showReloadNotification": false,
     "window.zoomLevel": 0,
@@ -118,5 +116,26 @@
             "workbench.action.debug.start"
         ]
     },
-    "window.nativeFullScreen": false,
+    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.views.lineHistory.enabled": false,
+    "intelephense.trace.server": "messages",
+    "intelephense.debug.enable": false,
+    "workbench.useExperimentalGridLayout": true,
+    "workbench.list.horizontalScrolling": true,
+    "editor.fontLigatures": true,
+    "colorize.languages": [
+        "json",
+        "css",
+        "sass",
+        "scss",
+        "less",
+        "postcss",
+        "sss",
+        "stylus",
+        "xml",
+        "svg"
+    ],
+    "workbench.activityBar.visible": true,
+    "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
+    "workbench.tree.indent": 15,
 }
