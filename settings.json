@@ -4,18 +4,22 @@
     "editor.minimap.renderCharacters": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.scrollBeyondLastLine": false,
-    "editor.occurrencesHighlight": false,
     "explorer.openEditors.visible": 0,
+    "phpcs.executablePath": "/Users/cg173410/.composer/vendor/bin/phpcs",
     "phpcs.standard": "Drupal,DrupalPractice",
     "phpcs.ignorePatterns": [
-        "*/**/*.drushrc.php"
+        "*/**/*.drushrc.php",
+        "*/**/settings.php",
+        "*/test/**"
     ],
     "php.suggest.basic": false,
     "[php]": {
         "editor.rulers": [80]
     },
     "[csharp]": {
+        "referencesCodeLens.enabled": false,
         "editor.tabSize": 4,
+        "editor.rulers": [100]
     },
     "php-docblocker.gap": true,
     "php-docblocker.useShortNames": true,
@@ -41,36 +45,64 @@
     },
     "gitlens.keymap": "alternate",
     "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": [
-                    "keyword.control"
-                ],
-                "settings": {
-                    "fontStyle": ""
+        "[Ste Enki]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "storage.type",
+                    ],
+                    "settings": {
+                        "fontStyle": "italic"
+                    }
+                },
+                {
+                    "scope": ["keyword.other.DML.sql"],
+                    "settings": {
+                        "fontStyle": ""
+                    }
                 }
-            }
-        ],
-        "[Material Theme Darker]": {
-            "variables": "#ff5370"
+            ]
         }
     },
     "workbench.colorCustomizations": {
+        "[Ste Enki]": {
+            // "sideBar.background": "#19191f",
+            "editorGroupHeader.tabsBackground": "#19191f",
+            "tab.inactiveBackground": "#19191f",
+            "tab.activeBackground": "#19191f",
+            // "statusBar.debuggingBackground": "#515c7e45",
+            "statusBar.debuggingForeground": "#1abc9c"
+        },
+        "[Material Theme Ocean]": {
+            "sideBar.border": "#483e4e",
+            "sideBar.background": "#060611",
+        },
+        "[Material Theme Palenight]": {
+            "sideBar.border": "#2e3244",
+            "sideBar.background": "#242735",
+        },
+        "[Material Theme Ocean High Contrast]": {
+            "sideBar.border": "#483e4e",
+            "editor.findMatchHighlightBackground": "#16d0ff28",
+        },
+        // "activityBar.background": "#000C1D",
+        // "activityBar.border": "#102a44",
+        // "sideBar.background": "#001122",
+        // "sideBar.border": "#102a44",
+        // "sideBar.foreground": "#8BADC1",
+
+        // "sideBar.background": "#353942",
         "scrollbar.shadow": "#151b1f65",
+        "editorBracketMatch.background": "#96deff1e",
+        "editorBracketMatch.border": "#96deff1e"
     },
     "editor.snippetSuggestions": "top",
     "window.newWindowDimensions": "inherit",
-    "editor.parameterHints": false,
     "editor.emptySelectionClipboard": false,
     "window.openFilesInNewWindow": "off",
     "editor.wordWrap": "off",
     "zenMode.fullScreen": false,
-    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
-    "material-icon-theme.folders.theme": "specific",
-    "material-icon-theme.hidesExplorerArrows": true,
-    "material-icon-theme.folders.color": "#42a5f5",
-    "workbench.activityBar.visible": true,
-    "better-phpunit.phpunitBinary": "phpunit",
+    "better-phpunit.phpunitBinary": "/Users/cg173410/.composer/vendor/bin/phpunit",
     "launch": {
         // Use IntelliSense to learn about possible attributes.
         // Hover to view descriptions of existing attributes.
@@ -86,22 +118,23 @@
             }
         }]
     },
-    "gitlens.historyExplorer.enabled": false,
     "files.associations": {
         "*.module": "php",
         "*.inc": "php",
         "*.install": "php",
-        "*.symlink": "shellscript"
+        "*.symlink": "shellscript",
+        "*.cf": "shellscript",
+        "*.cshtml": "csharp"
     },
     "php-docblocker.returnGap": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "workbench.editor.tabSizing": "shrink",
-    "workbench.colorTheme": "Enki - Rainbow Bro",
+    "workbench.colorTheme": "Ste Enki",
     "materialTheme.autoApplyIcons": false,
     "bookmarks.navigateThroughAllFiles": false,
     "explorer.autoReveal": false,
-    "breadcrumbs.enabled": true,
-    "eslint.nodePath": "/usr/local/lib/node_modules/eslint-config-airbnb-bundle",
+    "extensions.autoUpdate": false,
+    // "eslint.nodePath": "/usr/local/lib/node_modules/eslint-config-airbnb-bundle",
     "editor.fontSize": 16,
     "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-seriffont",
     "materialTheme.showReloadNotification": false,
@@ -116,7 +149,7 @@
             "workbench.action.debug.start"
         ]
     },
-    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": false,
     "intelephense.trace.server": "messages",
     "intelephense.debug.enable": false,
@@ -138,4 +171,17 @@
     "workbench.activityBar.visible": true,
     "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
     "workbench.tree.indent": 15,
+    "editor.occurrencesHighlight": false,
+    "editor.overviewRulerBorder": false,
+    "editor.fontWeight": "100",
+    "emmet.triggerExpansionOnTab": true,
+    "omnisharp.enableRoslynAnalyzers": true,
+    "git.promptToSaveFilesBeforeCommit": "staged",
+    "git.path": "git",
+    "npm.enableScriptExplorer": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[xml]": {
+        "editor.defaultFormatter": "mikeburgh.xml-format"
+    }
 }

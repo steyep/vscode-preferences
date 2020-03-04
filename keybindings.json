@@ -94,6 +94,7 @@
   },
   {
     "key": "alt+f12",
+
     "command": "-editor.action.previewDeclaration",
     "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
   },
@@ -103,11 +104,11 @@
   },
   {
     "key": "shift+cmd+enter",
-    "command": "workbench.action.minimizeOtherEditors",
+    "command": "workbench.action.minimizeOtherEditors"
   },
   {
     "key": "shift+alt+f",
-    "command": "-editor.action.formatDocument",
+    "command": "-editor.action.formatDocument"
   },
   {
     "key": "shift+alt+cmd+enter",
@@ -156,5 +157,20 @@
   "key": "shift+cmd+enter",
   "command": "editor.debug.action.selectionToRepl",
   "when": "inDebugMode"
+},
+{
+  "key": "cmd+k",
+  "command": "workbench.debug.panel.action.clearReplAction",
+  "when": "inDebugMode"
+},
+{
+  "key": "shift+alt+cmd+down",
+  "command": "editor.action.peekDefinition",
+  "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+},
+{
+  "key": "alt+f12",
+  "command": "-editor.action.peekDefinition",
+  "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
 }
 ]
