@@ -3,6 +3,7 @@ prefs=
 backup=
 
 vs_code="$HOME/Library/Application Support/Code"
+[[ "$(uname)" == "Linux" ]] && vs_code="$HOME/.config/Code"
 if [ ! -d "$vs_code" ]; then
   echo "Could not locate VSCode directory at:"
   echo "\"$vs_code\""
