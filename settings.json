@@ -8,8 +8,12 @@
     "explorer.openEditors.visible": 0,
     "phpcs.standard": "Drupal,DrupalPractice",
     "phpcs.ignorePatterns": [
-        "*/**/*.drushrc.php"
+        "*/**/*.drushrc.php",
+        "*/.local/*",
     ],
+    "phpcs.trace.server": "verbose",
+    "phpcs.showSources": true,
+    "phpcs.autoConfigSearch": false,
     "php.suggest.basic": false,
     "[php]": {
         "editor.rulers": [80]
@@ -65,7 +69,7 @@
     "window.openFilesInNewWindow": "off",
     "editor.wordWrap": "off",
     "zenMode.fullScreen": false,
-    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?-",
     "material-icon-theme.folders.theme": "specific",
     "material-icon-theme.hidesExplorerArrows": true,
     "material-icon-theme.folders.color": "#42a5f5",
@@ -91,7 +95,9 @@
         "*.module": "php",
         "*.inc": "php",
         "*.install": "php",
-        "*.symlink": "shellscript"
+        "*.symlink": "shellscript",
+        "*.j2": "twig",
+        "*.theme": "php",
     },
     "php-docblocker.returnGap": true,
     "diffEditor.ignoreTrimWhitespace": false,
@@ -101,7 +107,6 @@
     "bookmarks.navigateThroughAllFiles": false,
     "explorer.autoReveal": false,
     "breadcrumbs.enabled": true,
-    "eslint.nodePath": "/usr/local/lib/node_modules/eslint-config-airbnb-bundle",
     "editor.fontSize": 16,
     "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-seriffont",
     "materialTheme.showReloadNotification": false,
@@ -135,7 +140,17 @@
         "xml",
         "svg"
     ],
-    "workbench.activityBar.visible": true,
     "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
     "workbench.tree.indent": 15,
+    "rainbow_csv.autodetect_separators": [
+        "\t",
+        ",",
+        ";",
+        "|"
+    ],
+    "extensions.autoUpdate": false,
+    "search.exclude": {
+        "config": true,
+        "**/modules/contrib": false,
+    },
 }
