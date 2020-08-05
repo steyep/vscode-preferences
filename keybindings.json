@@ -156,5 +156,15 @@
   "key": "shift+cmd+enter",
   "command": "editor.debug.action.selectionToRepl",
   "when": "inDebugMode"
+},
+{
+  "key": "shift+alt+cmd+right",
+  "command": "editor.action.peekDefinition",
+  "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+},
+{
+  "key": "alt+f12",
+  "command": "-editor.action.peekDefinition",
+  "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
 }
 ]
