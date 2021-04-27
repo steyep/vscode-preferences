@@ -74,9 +74,25 @@
     "key": "cmd+k cmd+a",
     "command": "workbench.action.toggleActivityBarVisibility"
   },
+  // Terminal.
   {
-    "key": "shift+cmd+t",
+    "key": "cmd+space",
     "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+shift+d",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
   },
   {
     "key": "ctrl+`",
@@ -143,13 +159,8 @@
     "when": "inDebugMode"
   },
   {
-    "key": "cmd+k cmd+k",
-    "command": "workbench.action.terminal.clear",
-    "when": "terminalFocus"
-  },
-  {
     "key": "cmd+k",
-    "command": "-workbench.action.terminal.clear",
+    "command": "workbench.action.terminal.clear",
     "when": "terminalFocus"
   },
 {
@@ -158,7 +169,12 @@
   "when": "inDebugMode"
 },
 {
-  "key": "shift+alt+cmd+right",
+  "key": "alt+cmd+j",
+  "command": "-liveshare.join",
+  "when": "liveshare:state != 'Joined' && liveshare:state != 'Shared'"
+},
+{
+  "key": "shift+alt+cmd+down",
   "command": "editor.action.peekDefinition",
   "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
 },
@@ -166,5 +182,9 @@
   "key": "alt+f12",
   "command": "-editor.action.peekDefinition",
   "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+},
+{
+  "key": "alt+\\",
+  "command": "workbench.files.action.focusFilesExplorer"
 }
 ]
