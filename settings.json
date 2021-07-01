@@ -6,6 +6,7 @@
     "editor.scrollBeyondLastLine": false,
     "editor.occurrencesHighlight": false,
     "explorer.openEditors.visible": 0,
+    "scm.defaultViewMode": "tree",
     "phpcs.standard": "Drupal,DrupalPractice",
     "phpcs.ignorePatterns": [
         "*/**/*.drushrc.php",
@@ -107,6 +108,7 @@
         "*.symlink": "shellscript",
         "*.j2": "twig",
         "*.theme": "php",
+        "*.profile": "php"
     },
     "php-docblocker.returnGap": true,
     "workbench.editor.tabSizing": "shrink",
