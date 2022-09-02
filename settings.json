@@ -173,12 +173,9 @@
         "editor.defaultFormatter": "mblode.pretty-formatter"
     },
     "explorer.confirmDragAndDrop": false,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "default",
-            "filenamePattern": "git-rebase-todo"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "git-rebase-todo": "default"
+    },
     "dart.previewLsp": true,
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
