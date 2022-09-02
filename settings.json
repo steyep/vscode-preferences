@@ -83,19 +83,11 @@
             "name": "Listen for XDebug (DDEV)",
             "type": "php",
             "request": "launch",
-            "port": 9000,
+            "port": 9003,
             "pathMappings": {
-                "/var/www/html": "${workspaceRoot}",
+                "/var/www/html": "${workspaceFolder}"
             },
             "log": false,
-            "xdebugSettings": {
-                "show_hidden": 1
-            }
-        }, {
-            "name": "Listen for XDebug",
-            "type": "php",
-            "request": "launch",
-            "port": 9001,
             "xdebugSettings": {
                 "show_hidden": 1
             }
