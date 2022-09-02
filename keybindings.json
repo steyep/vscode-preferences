@@ -204,5 +204,13 @@
   "key": "alt+cmd+c",
   "command": "-copyFilePath",
   "when": "!editorFocus"
+},
+{
+  "key": "ctrl+left",
+  "command": "workbench.action.navigateBack"
+},
+{
+  "key": "ctrl+right",
+  "command": "workbench.action.navigateForward"
 }
 ]
