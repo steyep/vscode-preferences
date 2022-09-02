@@ -20,6 +20,13 @@
 			" * {@inheritdoc}",
 			" */"
 		],
+		"description": "Insert an Inherit Doc block"
+	},
+	"Inherit Doc Tag": {
+		"prefix": "@inheritdoc",
+		"body": [
+			"{@inheritdoc}"
+		],
 		"description": "Insert an Inherit Doc tag"
 	}
 }
