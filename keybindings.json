@@ -212,5 +212,9 @@
 {
   "key": "ctrl+right",
   "command": "workbench.action.navigateForward"
+},
+{
+  "key": "shift+cmd+a",
+  "command": "workbench.view.extension.atlascode-drawer"
 }
 ]
