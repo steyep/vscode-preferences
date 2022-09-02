@@ -100,7 +100,8 @@
         "*.symlink": "shellscript",
         "*.j2": "twig",
         "*.theme": "php",
-        "*.profile": "php"
+        "*.profile": "php",
+        "*.engine": "php"
     },
     "php-docblocker.returnGap": true,
     "workbench.editor.tabSizing": "shrink",
