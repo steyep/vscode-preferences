@@ -1,7 +1,6 @@
 {
     "editor.tabSize": 2,
     "editor.lineHeight": 30,
-    "editor.minimap.renderCharacters": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.scrollBeyondLastLine": false,
     "editor.occurrencesHighlight": false,
@@ -54,30 +53,24 @@
                 }
             }
         ],
-        "[Material Theme Darker]": {
+        "[Community Material Theme Darker]": {
             "variables": "#ff5370"
         }
     },
     "workbench.colorCustomizations": {
-        "scrollbar.shadow": "#151b1f65",
+        "[Tokyo Night]": {
+            "scrollbar.shadow": "#151b1f65",
+            "list.hoverBackground": "#1c1d29bb"
+        }
     },
     "editor.snippetSuggestions": "top",
     "window.newWindowDimensions": "inherit",
-    "editor.parameterHints": false,
     "editor.emptySelectionClipboard": false,
     "window.openFilesInNewWindow": "off",
     "editor.wordWrap": "off",
     "zenMode.fullScreen": false,
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?-",
-    "material-icon-theme.folders.theme": "classic",
-    "material-icon-theme.hidesExplorerArrows": true,
-    "material-icon-theme.folders.color": "#42a5f5",
-    "workbench.activityBar.visible": true,
-    "better-phpunit.phpunitBinary": "phpunit",
     "launch": {
-        // Use IntelliSense to learn about possible attributes.
-        // Hover to view descriptions of existing attributes.
-        // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
         "version": "0.2.0",
         "configurations": [{
             "name": "Listen for XDebug (DDEV)",
@@ -103,17 +96,13 @@
         "*.profile": "php",
         "*.engine": "php"
     },
+    "php.validate.executablePath": "/usr/local/bin/php",
     "php-docblocker.returnGap": true,
-    "workbench.editor.tabSizing": "shrink",
-    "workbench.colorTheme": "Tokyo Night",
-    "materialTheme.autoApplyIcons": false,
     "bookmarks.navigateThroughAllFiles": false,
     "explorer.autoReveal": false,
     "breadcrumbs.enabled": true,
     "editor.fontSize": 16,
     "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-seriffont",
-    "materialTheme.showReloadNotification": false,
-    "window.zoomLevel": 0,
     "debug.internalConsoleOptions": "neverOpen",
     "debug.openDebug": "neverOpen",
     "debug.openExplorerOnEnd": true,
@@ -125,24 +114,10 @@
         ]
     },
     "intelephense.trace.server": "messages",
-    "intelephense.debug.enable": false,
-    "workbench.useExperimentalGridLayout": true,
     "workbench.list.horizontalScrolling": true,
     "editor.fontLigatures": true,
-    "colorize.languages": [
-        "json",
-        "css",
-        "sass",
-        "scss",
-        "less",
-        "postcss",
-        "sss",
-        "stylus",
-        "xml",
-        "svg"
-    ],
     "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
-    "workbench.tree.indent": 15,
+    "workbench.tree.indent": 20,
     "rainbow_csv.autodetect_separators": [
         "\t",
         ",",
@@ -151,16 +126,16 @@
     ],
     "extensions.autoUpdate": false,
     "search.exclude": {
+        "**/.git": true,
         "**/modules/contrib": false
     },
     "liveshare.increasedGuestLimit": false,
     "liveshare.populateGitCoAuthors": "never",
     "liveshare.showInStatusBar": "whileCollaborating",
     "workbench.iconTheme": "eq-material-theme-icons-palenight",
-    "material-icon-theme.activeIconPack": "angular",
     "workbench.panel.defaultLocation": "right",
     "[html]": {
-        "editor.defaultFormatter": "mblode.twig-language"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[xml]": {
         "editor.defaultFormatter": "mblode.pretty-formatter"
@@ -169,20 +144,94 @@
     "workbench.editorAssociations": {
         "git-rebase-todo": "default"
     },
-    "dart.previewLsp": true,
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "search.useIgnoreFiles": false,
-    "workbench.sideBar.location": "left",
-    "vsicons.dontShowNewVersionMessage": true,
     "diffEditor.codeLens": true,
-    "diffEditor.ignoreTrimWhitespace": false,
     "editor.renderWhitespace": "none",
-    "workbench.editor.decorations.badges": false,
     "workbench.editor.mouseBackForwardToNavigate": false,
-    "workbench.editor.decorations.colors": false,
     "[json]": {
-        "editor.defaultFormatter": "mblode.pretty-formatter"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "twig": "html"
+    },
+    "workbench.editor.untitled.hint": "hidden",
+    "redhat.telemetry.enabled": false,
+    "liveshare.presence": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "terminal.integrated.gpuAcceleration": "off",
+    "files.exclude": {
+        "**/.git": false,
+    },
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "workbench.editor.tabSizing": "shrink",
+    "editor.minimap.renderCharacters": false,
+    "scm.inputFontFamily": "editor",
+    "scm.inputFontSize": 15,
+    "advancedNewFile.convenienceOptions": [
+        "last",
+        "current",
+        "root"
+    ],
+    "advancedNewFile.exclude": {
+        "node_modules": true,
+        "vendor": true,
+        "dist": true
+    },
+    "window.commandCenter": true,
+    "workbench.preferredDarkColorTheme": "Tokyo Night",
+    "workbench.preferredLightColorTheme": "Tokyo Night Light",
+    "thunder-client.htmlView": "Preview",
+    "workbench.colorTheme": "Tokyo Night",
+    "outline.showVariables": false,
+    "thunder-client.saveRequestOnSend": false,
+    "gitlens.views.contributors.showStatistics": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.bracketPairColorization.enabled": false,
+    "workbench.editor.decorations.badges": false,
+    "workbench.editor.decorations.colors": false,
+    "editor.guides.bracketPairsHorizontal": false,
+    "atlascode.jira.enabled": true,
+    "atlascode.bitbucket.explorer.relatedBitbucketIssues.enabled": false,
+    "atlascode.bitbucket.explorer.notifications.pullRequestCreated": false,
+    "atlascode.bitbucket.issues.explorerEnabled": false,
+    "atlascode.bitbucket.contextMenus.enabled": true,
+    "atlascode.bitbucket.statusbar.enabled": false,
+    "atlascode.bitbucket.enabled": true,
+    "atlascode.jira.statusbar.showUser": false,
+    "atlascode.jira.statusbar.showProduct": false,
+    "atlascode.jira.statusbar.enabled": true,
+    "atlascode.jira.statusbar.showLogin": true,
+    "atlascode.jira.todoIssues.triggers": [
+        "@todo",
+        "BUG:",
+        "FIXME:",
+        "ISSUE:"
+    ],
+    "atlascode.offlineMode": true,
+    "atlascode.helpExplorerEnabled": false,
+    "atlascode.jira.startWorkBranchTemplate.customPrefixes": [
+        "feature",
+        "bugfix",
+        "release"
+    ],
+    "atlascode.bitbucket.issues.monitorEnabled": false,
+    "atlascode.bitbucket.pipelines.branchFilters": [
+        "develop"
+    ],
+    "atlascode.bitbucket.statusbar.showProduct": false,
+    "atlascode.bitbucket.explorer.nestFilesEnabled": false,
+    "atlascode.bitbucket.pipelines.refreshInterval": 15,
+    "atlascode.bitbucket.preferredRemotes": [
+        "origin"
+    ],
+    "atlascode.bitbucket.statusbar.showUser": false,
+    "atlascode.jira.showCreateIssueProblems": true,
+    "atlascode.jira.startWorkBranchTemplate.customTemplate": "{{{prefix}}}/{{{issueKey}}}-{{{summary}}}",
 }
