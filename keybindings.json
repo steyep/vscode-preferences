@@ -186,5 +186,23 @@
 {
   "key": "alt+\\",
   "command": "workbench.files.action.focusFilesExplorer"
+},
+{
+  "key": "ctrl+n",
+  "command": "explorer.newFile"
+},
+{
+  "key": "ctrl+shift+n",
+  "command":"explorer.newFolder"
+},
+{
+  "key": "ctrl+c",
+  "command": "copyFilePath",
+  "when": "!editorFocus"
+},
+{
+  "key": "alt+cmd+c",
+  "command": "-copyFilePath",
+  "when": "!editorFocus"
 }
 ]
